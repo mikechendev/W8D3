@@ -164,8 +164,8 @@ Board.prototype.placePiece = function (pos, color) {
  */
 Board.prototype.validMoves = function (color) {
   let moves = [];
-  for (i=0;i<8;i++){
-    for (j=0;j<8;j++){
+  for (let i=0;i<8;i++){
+    for (let j=0;j<8;j++){
       let pos = [i,j];
       if (this.validMove(pos,color)){
         moves.push(pos);
